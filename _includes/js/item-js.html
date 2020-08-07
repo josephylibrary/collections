@@ -6,7 +6,7 @@
     /* add item data */
     var items = { 
         {%- for item in site.data[site.metadata] -%}
-        {{ item.objectid | jsonify }} : { {% for f in fields %}{% if item[f.field] %}{{ f.field | escape | jsonify }}: {{ item[f.field] | escape | jsonify }}, {% endif %}{% endfor %}{% if item.youtubeid %} "youtube": {{ item.youtubeid | jsonify }}, {% endif %}{% if item.imagelink %}"imagelink": {{ item.imagelink | jsonify }},{% endif %}{% if item.catalognum %}"catalognum": {{ item.catalognum | jsonify }},{% endif %}"format": {{ item.format | jsonify }}, {% if item.filename %}"filename": {{ item.filename | jsonify }},{% endif %} "icon": {{ item.formatoriginal | remove: ' ' | jsonify }} }{% unless forloop.last %}, {% endunless %}
+        {{ item.objectid | jsonify }} : { {% for f in fields %}{% if item[f.field] %}{{ f.field | escape | jsonify }}: {{ item[f.field] | escape | jsonify }}, {% endif %}{% endfor %}{% if item.youtubeid %} "youtube": {{ item.youtubeid | jsonify }}, {% endif %}{% if item.imagelink %}"imagelink": {{ item.imagelink | jsonify }},{% endif %}"format": {{ item.format | jsonify }}, {% if item.filename %}"filename": {{ item.filename | jsonify }},{% endif %} "icon": {{ item.formatoriginal | remove: ' ' | jsonify }} }{% unless forloop.last %}, {% endunless %}
         {% endfor %}
     };
     /* get query id from URL */
@@ -27,7 +27,7 @@
         var format = record.format;
         var formatoriginal = record.formatoriginal;
         var objectLink = '{{ "/objects/" | absolute_url }}' + record.filename;
-        var catalogUrl = 'https://catalog.sage.eou.edu/eg/opac/record/' + record.catalognum
+        var linkUrl = record.filename
         var thumbSrc
         if (record.imagelink) {
       thumbSrc = '{{ "/objects/" | relative_url }}' + record.imagelink ;
@@ -39,8 +39,8 @@
             itemImage= '<div class="gallery-img" data-src="' + objectLink + '"><img class="img-fluid" src="' + objectLink + '" alt="' + objectTitle + '"><p><small>Click to view full screen</small></p></div>';
             itemLink= '<a href="' + objectLink + '" target="_blank" class="btn btn-dark" title="Object download">Download Image</a>';
         } else if (format.includes('url')) {
-            itemImage= '<a href="' + catalogUrl + '" target="_blank"><img class="w-50 lazyloaded"  alt="icon of link" src="'+ thumbSrc +'"></a>';
-            itemLink= '<a href="' + catalogUrl + '" target="_blank" class="btn btn-dark" title="Object download">Check Item in Catalog</a>';
+            itemImage= '<a href="' + linkUrl + '" target="_blank"><img class="w-50 lazyloaded"  alt="icon of link" src="'+ thumbSrc +'"></a>';
+            itemLink= '<a href="' + linkUrl + '" target="_blank" class="btn btn-dark" title="Object download">Go to Linked Item</a>';
         } else if (format.includes('listing')) {
             itemImage= '<a href="' + catalogUrl + '" target="_blank"><img class="w-50 lazyloaded"  alt="icon of link" src="'+ thumbSrc +'"></a>';
             itemLink= '<p class="my-4 col-12">Item is available in physical format in the Josephy Library</p>';

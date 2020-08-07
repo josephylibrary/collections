@@ -15,6 +15,18 @@ layout: page
         </div>
         <div class="h2" id="numberOf"></div>
     </div>
+    <div class="col-md-2">
+        <div class="dropdown">
+            <button class="btn btn-secondary mt-1 dropdown-toggle" type="button" id="browseSortButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Filter by <span class="font-weight-bold" id="sortfilter">All</span>
+            </button>
+            <div class="dropdown-menu browse-sort-menu" aria-labelledby="browseSortButton">
+                <a class="dropdown-item browse-sort-item active filter" data-filter="" href="/collections/browse.html#">All</a>
+                {%- assign collections = site.data[site.metadata] | map: 'collection' | compact | uniq -%}
+                {% for collection in collections %}<a class="dropdown-item browse-sort-item" data-filter="random" href="/collections/browse.html#{{collection}}">{{collection}}</a>{% endfor %}
+             </div>
+        </div>
+    </div>
 </div>
 
 <div id="loading" class="text-center">
