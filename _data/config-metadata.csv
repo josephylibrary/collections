@@ -1,0 +1,16 @@
+field,display_name,browse_link
+title,Title,
+creator,Creator,
+contribution,Contribution,
+publication,In Publication,
+description,Description,
+controlled-vocab,Vocab,true
+subject,Subjects,true
+publisher,Publisher,
+location,Place of Publication
+date,Date Created,
+page,Page
+issue,Issue,
+formatoriginal,Original Format,
+type,Type,
+format,Format,
