@@ -1,9 +1,8 @@
 display_name,stub,dropdown_parent
 Home,/
-Browse,/browse.html
+Browse,/browse.html,Browse
 Subjects,/subjects.html
 Types,/types.html
-Timelines,
-Timeline,/timeline.html,Timelines
-Timeline of Annotations,/timeline-annotations.html,Timelines
+Timeline,/timeline.html
+Library Catalog,/catalog.html,
 Data,/data/

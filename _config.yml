@@ -10,7 +10,7 @@
 # url is your gh-pages base, following the pattern: username.github.io
 url: https://josephylibrary.github.io
 # baseurl is your github repository's name prefixed with a /
-baseurl: /annotatedjosephy
+baseurl: /collections
 # location of code, the full url to your github repository
 source-code: https://github.com/josephylibrary/annotatedjosephy
 
@@ -18,12 +18,12 @@ source-code: https://github.com/josephylibrary/annotatedjosephy
 # SITE SETTINGS
 #
 # title of site appears in banner
-title: Annotated Josephy
+title: Josephy Library Collections
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: An Annotated Bibliography of Alvin Josephy, from the Josephy Library in Joseph, OR
+tagline: Discoverable Collections of the The Alvin M. and Betty Josephy Library of Western History and Culture 
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "Annotated Josephy is an online resource provided by The Alvin M. and Betty Josephy Library of Western History and Culture. The site provides bibliographical references and annotations on all works that Alvin Josephy played some part in creating. "
+description: "Josephy Library Collections brings the collections of the Josephy Library together in a search- and browse-able website. Collections include items from Josephy Videos, Rich Wandschneider's Blog, the Wallowa County History Collection, and others. "
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
 author: CollectionBuilder
 
@@ -31,7 +31,7 @@ author: CollectionBuilder
 # COLLECTION SETTINGS
 #
 # choose metadata: this is the name of the csv file in your _data directory that describes the objects in your collection
-metadata: ab 
+metadata: collections 
 
 ##########
 # GOOGLE SERVICES [optional!]

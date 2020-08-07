@@ -19,7 +19,7 @@
     "events": [
       {% for item in items %}{% if item.date %}{
         "media": {
-          "url": "{% if item.imagelink %}{{ '/objects/' | relative_url }}{{item.imagelink}}{% else %}{{ '/assets/icons/' | relative_url }}{{item.formatoriginal | split: ';' | first }}.svg{% endif %}",
+          "url": "{% if item.imagelink %}{{ '/objects/' | relative_url }}{{item.imagelink}}{% else %}{{ '/assets/icons/' | relative_url }}{{item.formatoriginal | remove: ' ' }}.svg{% endif %}",
           "caption": {{ item.title | jsonify }},
           "link": "{{ '/item.html' | relative_url | append: '?id=' | append: item.objectid }}",
           "credit": "{{ site.title }}"

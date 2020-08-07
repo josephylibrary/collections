@@ -1,8 +1,8 @@
 ---
 layout: page
 ---
-{% assign fields = site.data.config-table | map: 'display_name' %}
-{% include data-download-modal.html %}
+{% if page.url contains 'catalog'%}{% assign fields = site.data.config-catalog | map: 'display_name' %}{% else %}{% assign fields = site.data.config-table | map: 'display_name' %}{% endif %}
+{% unless page.title contains 'atalog' %}{% include data-download-modal.html %}{% endunless %}
 
 {{ content }}
 

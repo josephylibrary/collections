@@ -45,7 +45,7 @@ browse-buttons: true # true/false, adds previous/next arrows to item pages
 ##########
 # SUBJECTS PAGE
 #
-subjects-fields: subject;controlled-vocab; # set the field to be featured in the cloud (if left blank, none will be generated)
+subjects-fields: subject # set the field to be featured in the cloud (if left blank, none will be generated)
 subjects-min: 2 # min size for subject cloud, too many terms = slow load time!
 subjects-stopwords: # boxers;boxing;boxer # set of subjects separated by ;, e.g. boxers;boxing
 
@@ -80,9 +80,9 @@ year-nav-increment: 5 # set increments when auto gen nav years
 #
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,objectid,filename,creator,contribution,publication,publisher,placeofpub,date,description,annotation,controlled-vocab,subject,page,issue,latitude,longitude,collection,identifier,formatoriginal,type,format,language,rights,rightsstatement"
+metadata-export-fields: "objectid,filename,youtubeid,title,creator,publisher/publication,place,date,description,subject,collection,page,vol-issue,latitude,longitude,identifier,formatoriginal,type,format,language,rights,rightsstatement"
 # generate a facets list for given fields, comma delimited
-metadata-facets-fields: "subject,creator,format"
+metadata-facets-fields: "subject,creator,format,publisher/publication,collection,place"
 
 ##########
 # ADVANCED OPTIONS

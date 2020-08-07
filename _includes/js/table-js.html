@@ -5,12 +5,13 @@
 (function(){
     $('#item-table').DataTable( {
         // use DataTables ajax load to 
-        ajax: { url: '{{ "/data/metadata.min.json" | relative_url }}', dataSrc: 'objects' },
+        {% if page.url contains 'catalog' %}ajax: { url: '{{ "/data/catalog.json" | relative_url }}', dataSrc: 'objects' },{% else %}
+        ajax: { url: '{{ "/data/metadata.min.json" | relative_url }}', dataSrc: 'objects' },{% endif %}
         // defer render to speed up large sets
         "deferRender": true,
         // enable pagination 
         "paging": true,
-        "lengthMenu": [[ 25, 50, 100, -1], [ 25, 50, 100, "All"]],
+        "lengthMenu": [[ 200, 25, 50, 100, -1], [ 200, 25, 50, 100, "All"]],
         // add download features
         dom: 'B<"row mt-2"<"col-md-6"l><"col-md-6"f>>t<"row"<"col-md-6"i><"col-md-6"p>>', 
         buttons: [ 'excelHtml5', 'csvHtml5' ],
