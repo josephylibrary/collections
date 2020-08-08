@@ -45,7 +45,7 @@ layout: page
                         <div class="card"> 
                             <div class="card-body text-center {% if item.annotation %}border border-info{% endif %}">
                                 <h4 class="card-title text-dark">{{ item.title }}</h4>
-                                <img class="lazyload img-thumbnail w-50" data-src="{% if item.youtubeid %}{{ 'https://img.youtube.com/vi/' | append: item.youtubeid | append: '/hqdefault.jpg' | relative_url }}{% else %}{{ '/assets/icons/' | relative_url }}{{ item.formatoriginal | remove: ' ' }}.svg{% endif %}" alt="icon for  {{item.formatoriginal }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.date | escape }} {% if item.annotation %}| {{ item.annotation | escape }}{% endif %}">
+                                <img class="lazyload img-thumbnail w-50" data-src="{% if item.youtubeid %}{{ 'https://img.youtube.com/vi/' | append: item.youtubeid | append: '/hqdefault.jpg' | relative_url }}{% else %}{{ '/assets/icons/' | relative_url }}{{ item.formatoriginal | downcase | remove: ' '  }}.svg{% endif %}" alt="icon for  {{item.formatoriginal }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.date | escape }} {% if item.annotation %}| {{ item.annotation | escape }}{% endif %}">
                             </div>
                         </div>
                         {% else %}
