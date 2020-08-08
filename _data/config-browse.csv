@@ -3,4 +3,4 @@ date,Date,
 creator,Creator,
 collection,Collection,
 subject,,true
-formatoriginal,Format,
+formatoriginal,,,hidden
