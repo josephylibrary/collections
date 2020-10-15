@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white justify-content-center mb-3">
+    <div class="container">
+        <button class="navbar-toggler text-left" type="button" data-toggle="collapse" data-target="#library-nav" aria-controls="library-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> MENU
+        </button>
+
+        <div class="justify-content-center text-center collapse navbar-collapse" id="library-nav">
+            <ul class="navbar-nav text-center justify-content-center col">
+                {%- assign navItems = site.data.config-library-nav | where_exp: 'item', 'item.dropdown_parent == nil' -%} 
+                {% for nav in navItems %}
+                {% if nav.stub %}
+                <li class="nav-item {% if page.url == nav.stub %}active{% endif %} h6 small pr-2">
+                    <a class="nav-link " href="{{ nav.stub | relative_url }}">{{ nav.display_name }}</a>
+                </li>
+                {%- else -%}
+                <li class="nav-item dropdown h6 small pr-2">
+                    {% assign navChildren = site.data.config-library-nav | where_exp: 'item', 'item.dropdown_parent == nav.display_name' %}
+                    {%- assign childStubs = navChildren | map: 'stub' -%}
+                    <a class="nav-link  dropdown-toggle{% if childStubs contains page.url %} active{% endif %}" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ nav.display_name }}</a>
+                    <div class="dropdown-menu">
+                        {% for c in navChildren %}
+                        <a class="dropdown-item {% if page.url == c.stub %}active{% endif %} h6" href="{{ c.stub | relative_url }}">{{ c.display_name }}</a>
+                        {% endfor %}
+                    </div>
+                </li>
+                {% endif %}
+                {%- endfor -%}
+            </ul>
+            
+           
+            
+        </div>
+    </div>
+</nav>

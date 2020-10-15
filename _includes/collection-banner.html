@@ -1,29 +1,29 @@
 <style>
-#home-banner {
-    background-image: url('{% include image/featured-image.html %}');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: {{ site.data.theme.home-banner-image-position | default: 'center' }};
-}
-#home-title-box {
-    padding-top: {{ site.data.theme.home-title-y-padding | default: '5em' }};
-    padding-bottom: {{ site.data.theme.home-title-y-padding | default: '5em' }};
-}
-@media screen and (max-width: 576px) {
-    #home-title-box {
-        padding-top: 5em;
-        padding-bottom: 5em; 
+    #home-banner {
+        background-image: url('{% include image/featured-image.html %}');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
     }
-}
-</style>
-<div id="home-banner" class="container-fluid mb-0 p-0">
-    <div id="home-title-box" >
-        <div class="title-card p-2 text-center">
-            <h1 class="display-4">{{ site.title }}</h1>
-            {% if site.tagline %}<p class="mb-0">{{ site.tagline }}</p>{% endif %}
+    #home-title-box {
+        padding-top: {{ site.data.theme.home-title-y-padding | default: '1em' }};
+    }
+    @media screen and (max-width: 976px) {
+        #home-title-box {
+            padding-top: 0em;
+            padding-bottom: 0em; 
+        }
+    }
+    </style>
+    <div id="home-banner" class="container  p-0" style="margin: 20px auto 20px;">
+        <div id="home-title-box" >
+            <div class="title-card p-2 text-center">
+                <h1 class="display-4">{{ site.title }}</h1>
+                {% if site.tagline %}<p class="mb-0">{{ site.tagline }}</p>{% endif %}
+            </div>
         </div>
+        {% unless site.data.theme.featured-image contains '/' %}<div class="text-right p-0 mt-0">
+            <small><a class="text-info featured-link" href="{{ site.data.theme.featured-image | prepend: '/item.html?id=' | relative_url }}" title="{{ featuredItem.title | escape }}">Featured Image</a></small>
+        </div>{% endunless %}
     </div>
-    {% unless site.data.theme.featured-image contains '/' %}<div class="text-right p-0 mt-0">
-        <small><a class="text-info featured-link" href="{{ site.data.theme.featured-image | prepend: '/item.html?id=' | relative_url }}" title="{{ featuredItem.title | escape }}">Featured Image</a></small>
-    </div>{% endunless %}
-</div>
+    

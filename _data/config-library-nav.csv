@@ -1,0 +1,23 @@
+display_name,stub,dropdown_parent
+HOME,http://library.josephy.org/,
+ABOUT,,
+THE LIBRARY,https://library.josephy.org/LIBRARY/,ABOUT
+ALVIN JOSEPHY,https://library.josephy.org/josephy-bio/,ABOUT
+LIBRARY DIRECTOR,https://library.josephy.org/library-director/,ABOUT
+COLLECTIONS,,
+ANNOTATED BIBLIOGRAPHY,https://josephylibrary.github.io/annotatedjosephy/,COLLECTIONS
+JOSEPHY LIBRARY COLLECTIONS,https://josephylibrary.github.io/collections/,COLLECTIONS
+JOSEPHY LIBRARY LENDING SHELF,#,COLLECTIONS
+MARY B. BUFORD COLLECTION,#,COLLECTIONS
+SAGE COLLECTION,https://catalog.sage.eou.edu/eg/opac/results?query=*&qtype=keyword&fg%3Amat_format=&locg=175&detail_record_view=1&_adv=1&sort=,COLLECTIONS
+EVENTS,,
+BROWN BAG LUNCHES,https://library.josephy.org/library/brown-bag-lunches/,EVENTS
+VIRTUAL BOOK GROUP,https://library.josephy.org/book-group/,EVENTS
+EXHIBITS,,
+‘ETWEYÉ·WISE SCULPTURE,https://library.josephy.org/plateau-indian-art-on-main-street/,EXHIBITS
+ALVIN JOSEPHY INTERACTIVE EXHIBIT,https://library.josephy.org/alvin-exhibit/,EXHIBITS
+HISTORIC PHOTOS OF WALLOWA,https://library.josephy.org/historic-photos-virtual-exhibit/,EXHIBITS
+NEZ PERCE MUSIC,https://library.josephy.org/nez-perce-music/,EXHIBITS
+“'THEY WAY THEY LIVED' - THE WAL-LUM-WAT-KIN BAND OF CHUTE-PA-LU OR NEZ PERCES,https://library.josephy.org/they-way-they-lived/,EXHIBITS
+LIBRARY BLOG,https://library.josephy.org/blog/
+DONATE,https://library.josephy.org/donate/
