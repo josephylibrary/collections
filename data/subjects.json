@@ -1,4 +1,4 @@
----
+(NEEDS another "---" at top for this one to work)
 # find and count unique subjects used in the metadata
 ---
 {%- if site.data.theme.subjects-fields -%}

@@ -1,4 +1,4 @@
----
+(NEEDS another "---" at top for this one to work)
 # metadata for table ajax
 ---
 {%- assign items = site.data.josephycatalog -%}

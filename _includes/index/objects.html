@@ -1,26 +1,25 @@
-{%- assign formats = site.data[site.metadata] | map: "format" -%}
-{%- assign types = "image;audio;video;application" | split: ";" -%}
-<div class="card mb-3" >
+{%- assign formats = site.data[site.metadata] | map: "formatoriginal" -%}
+{%- assign types = "blog post;book;booklet;brochure;manuscript;student papers;video;wc history misc" | split: ";" -%}
+<div class="card mb-3">
     <div class="card-body">
-        <h5 class="card-title">Objects</h5>
-        <p class="card-text">
-            {% for t in types %}
-            {%- assign count = formats | where_exp: 'item','item contains t' | size -%}
-            {% if count > 0 %}
-            {{ count }}
-            {% case t %}
-            {% when 'image' %} 
-            <a class="text-dark" href="{{ 'image' | prepend: '/browse.html#' | relative_url }}">Images <span class="far fa-image"></span></a><br>
-            {% when 'audio' %}
-            <a class="text-dark" href="{{ 'audio' | prepend: '/browse.html#' | relative_url }}">Audio <span class="far fa-file-audio"></span></a><br>
-            {% when 'video' %}
-            <a class="text-dark" href="{{ 'video' | prepend: '/browse.html#' | relative_url }}">Videos <span class="far fa-file-video"></span></a><br>
-            {% else %}
-            <a class="text-dark" href="{{ 'pdf' | prepend: '/browse.html#' | relative_url }}">PDFs <span class="far fa-file"></span></a><br>
-            {% endcase %}
-            {% endif %}
-            {%- endfor -%}
-            <a class="btn btn-sm btn-outline-secondary mt-2" href="{{ '/data/' | relative_url }}">View table</a>
-        </p>
+        <h5 class="card-title">View by Type</h5>
+        <div class="row">
+
+     
+        {% for t in types %}
+        {%- assign count = formats | where_exp: 'item','item contains t' | size -%}
+        {% if count > 0 %}
+<div class="col-4 col-lg-3">
+        <div class="card p-2 border-0 text-center mb-3">
+            <img class="card-img-top"class="img-fluid" src="{{ t | downcase | remove: ' ' | prepend: '/assets/icons/' | relative_url }}.svg">
+            <h5 class="card-title mb-1"> <a class="text-dark stretched-link mt-1" href="{{ t | prepend: '/browse.html#' | relative_url }}">{{t | capitalize}}</a></h5>
+            <p>{{count}}</p>
+        </div>
+    </div>
+
+        {% endif %}
+        {%- endfor -%}
+    </div>
+     
     </div>
 </div>

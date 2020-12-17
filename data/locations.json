@@ -1,4 +1,4 @@
----
+(NEEDS another "---" at top for this one to work)
 # find all unique locations used in the metadata
 ---
 {%- if site.data.theme.locations-fields -%}

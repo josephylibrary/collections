@@ -1,4 +1,4 @@
----
+(NEEDS another "---" at top for this one to work)
 # generate geojson data for collection items with lat-longs
 ---
 {%- assign items = site.data[site.metadata] | where_exp: 'item','item.latitude' -%}
