@@ -1,7 +1,7 @@
 display_name,stub,dropdown_parent
 HOME,https://library.josephy.org/,
 ABOUT,,
-THE LIBRARY,https://library.josephy.org/LIBRARY/,ABOUT
+THE LIBRARY,https://library.josephy.org/library/,ABOUT
 ALVIN JOSEPHY,https://library.josephy.org/josephy-bio/,ABOUT
 LIBRARY DIRECTOR,https://library.josephy.org/library-director/,ABOUT
 COLLECTIONS,,
@@ -19,9 +19,10 @@ VIRTUAL BOOK GROUP,https://library.josephy.org/book-group/,EVENTS
 JOSEPHY CENTER CALENDAR,https://josephy.org/calendar/,EVENTS
 NEZ PERCE,,
 ABOUT THE NIIMÍIPUU,https://library.josephy.org/niimipuu/,NEZ PERCE
+FRIENDS AND PARTNERS,https://library.josephy.org/friends/,NEZ PERCE
 ANCESTRAL WALLOWA LANDS,https://library.josephy.org/ancestral-wallowa-lands/,NEZ PERCE
 'ETWEYÉ·WISE SCULPTURE,https://library.josephy.org/plateau-indian-art-on-main-street/,NEZ PERCE
 NEZ PERCE MUSIC EXHIBIT,https://library.josephy.org/nez-perce-music/,NEZ PERCE
-'THEY WAY THEY LIVED' - THE WAL-LUM-WAT-KIN BAND OF CHUTE-PA-LU OR NEZ PERCES,https://library.josephy.org/the-way-they-lived/,NEZ PERCE
+'THE WAY THEY LIVED' - A NEZ PERCE EXHIBIT,https://library.josephy.org/the-way-they-lived/,NEZ PERCE
 LIBRARY BLOG,https://library.josephy.org/blog/
 DONATE,https://library.josephy.org/donate/
