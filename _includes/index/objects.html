@@ -1,5 +1,5 @@
 {%- assign formats = site.data[site.metadata] | map: "formatoriginal" -%}
-{%- assign types = "blog post;book;booklet;brochure;manuscript;student papers;video;wc history misc" | split: ";" -%}
+{%- assign types = "blog post;wallowabooks;brochure;manuscript;student papers;video;wc history misc" | split: ";" -%}
 <div class="card mb-3">
     <div class="card-body">
         <h5 class="card-title">View by Type</h5>
@@ -9,7 +9,7 @@
         {% for t in types %}
         {%- assign count = formats | where_exp: 'item','item contains t' | size -%}
         {% if count > 0 %}
-<div class="col-4 col-lg-3">
+<div class="col-4 col-lg-4">
         <div class="card p-2 border-0 text-center mb-3">
             <img class="card-img-top"class="img-fluid" src="{{ t | downcase | remove: ' ' | prepend: '/assets/icons/' | relative_url }}.svg">
             <h5 class="card-title mb-1"> <a class="text-dark stretched-link mt-1" href="{{ t | prepend: '/browse.html#' | relative_url }}">{{t | capitalize}}</a></h5>
