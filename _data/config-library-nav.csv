@@ -2,26 +2,27 @@ display_name,stub,dropdown_parent
 HOME,https://library.josephy.org/,
 ABOUT,,
 THE LIBRARY,https://library.josephy.org/library/,ABOUT
-ALVIN JOSEPHY,https://library.josephy.org/josephy-bio/,ABOUT
+ALVIN JOSEPHY,https://library.josephy.org/alvin-josephy/,ABOUT
 LIBRARY DIRECTOR,https://library.josephy.org/library-director/,ABOUT
 COLLECTIONS,,
 ANNOTATED ALVIN JOSEPHY,https://josephylibrary.github.io/annotatedjosephy/,COLLECTIONS
 FEATURED ARCHIVES,https://josephylibrary.github.io/collections/,COLLECTIONS
-LIBRARY LENDING SHELF,https://library.josephy.org/library/josephy-library-lending-shelf/,COLLECTIONS
-MARY B. BUFORD COLLECTION,https://library.josephy.org/library/mary-b-buford-collection/,COLLECTIONS
+LIBRARY LENDING SHELF,https://library.josephy.org/collections/josephy-library-lending-shelf/,COLLECTIONS
+MARY B. BUFORD COLLECTION,https://library.josephy.org/collections/mary-b-buford-collection/,COLLECTIONS
 SAGE COLLECTION,https://catalog.sage.eou.edu/eg/opac/results?query=*&qtype=keyword&fg%3Amat_format=&locg=175&detail_record_view=1&_adv=1&sort=,COLLECTIONS
-ALVIN JOSEPHY INTERACTIVE EXHIBIT,https://library.josephy.org/alvin-exhibit/,COLLECTIONS
+ALVIN JOSEPHY INTERACTIVE EXHIBIT,https://library.josephy.org/alvin-josephy/#exhibit,COLLECTIONS
 HISTORIC PHOTOS OF WALLOWA,https://library.josephy.org/historic-photos-virtual-exhibit/,COLLECTIONS
 EVENTS,,
-BROWN BAG LUNCHES,https://library.josephy.org/library/brown-bag-lunches/,EVENTS
+BROWN BAG LUNCHES,https://library.josephy.org/brown-bag-lunches/,EVENTS
 VIRTUAL BOOK GROUP,https://library.josephy.org/book-group/,EVENTS
 JOSEPHY CENTER CALENDAR,https://josephy.org/calendar/,EVENTS
 NEZ PERCE,,
-ABOUT THE NIIMÍIPUU,https://library.josephy.org/niimipuu/,NEZ PERCE
-FRIENDS AND PARTNERS,https://library.josephy.org/friends/,NEZ PERCE
+ABOUT THE NIIMÍIPUU,https://library.josephy.org/nimipu/,NEZ PERCE
+NEZ PERCE BOOKS,https://catalog.sage.eou.edu/eg/opac/results?query=Nez+Perce+&qtype=keyword&fg%3Amat_format=&locg=175&detail_record_view=1&_adv=1&page=0&sort=/,NEZ PERCE
+RICH'S BLOG,https://library.josephy.org/blog/,NEZ PERCE
 ANCESTRAL WALLOWA LANDS,https://library.josephy.org/ancestral-wallowa-lands/,NEZ PERCE
 'ETWEYÉ·WISE SCULPTURE,https://library.josephy.org/plateau-indian-art-on-main-street/,NEZ PERCE
 NEZ PERCE MUSIC EXHIBIT,https://library.josephy.org/nez-perce-music/,NEZ PERCE
-'THE WAY THEY LIVED' - A NEZ PERCE EXHIBIT,https://library.josephy.org/the-way-they-lived/,NEZ PERCE
+'THE WAY THEY LIVED' EXHIBIT,https://library.josephy.org/the-way-they-lived/,NEZ PERCE
 LIBRARY BLOG,https://library.josephy.org/blog/
 DONATE,https://library.josephy.org/donate/
