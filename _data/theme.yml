@@ -8,7 +8,7 @@
 #
 # featured image is used in home page banner and in meta markup to represent the collection
 # use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
-featured-image: https://library.josephy.org/wp-content/uploads/2020/10/Library_Logo.png
+featured-image: https://library.josephy.org/wp-content/uploads/2020/12/Library_Logo.png
 # optional: add extra padding around collection title for a larger image feature. 
 home-title-y-padding: 5em # Default is 8em
 # optional: change position of background image, center, top, bottom
