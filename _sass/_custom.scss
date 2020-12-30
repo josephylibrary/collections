@@ -31,3 +31,17 @@ SVG Icons - svgicons.sparkk.fr
 .nav-item .h6 .small .pr-2 {
   padding-right: 15px
 }
+
+//FORMATTING
+body, .card-text {
+  font-size: 14px;
+}
+.navbar-dark .navbar-nav .nav-link {
+  text-transform: uppercase;
+}
+.card-title {
+  font-weight: 600;
+}
+a.nav-link.text-white.border.font-weight-bold {
+margin-right: 20px
+}
