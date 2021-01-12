@@ -37,7 +37,7 @@ metadata: collections
 # GOOGLE SERVICES [optional!]
 #
 # leave these blank or comment out to NOT include google code
- google-analytics-id: "G-5T7MY5WZPZ"
+google-analytics-id: "G-5T7MY5WZPZ"
 # google-cse-id: "002151703305773322890:1pu3smhw1t8"
 
 ##########
