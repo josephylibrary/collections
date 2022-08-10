@@ -1,5 +1,5 @@
 {%- assign formats = site.data[site.metadata] | map: "formatoriginal" -%}
-{%- assign types = "blog post;Wallowa books;brochure;manuscript;student papers;video;wc history misc" | split: ";" -%}
+{%- assign types = site.data[site.metadata] | map: "formatoriginal" | compact | uniq -%}
 <div class="card mb-3">
     <div class="card-body">
         <h5 class="card-title">View by Type</h5>
@@ -12,7 +12,7 @@
 <div class="col-4 col-lg-4">
         <div class="card p-2 border-0 text-center mb-3">
             <img class="card-img-top"class="img-fluid" src="{{ t | downcase | remove: ' ' | prepend: '/assets/icons/' | relative_url }}.svg">
-            <h5 class="card-title mb-1"> <a class="text-dark stretched-link mt-1" href="{{ t | prepend: '/browse.html#' | relative_url }}">{{t | capitalize}}</a></h5>
+            <h5 class="card-title mb-1"> <a class="text-dark stretched-link mt-1" href="{{ t | prepend: '/browse.html#' | relative_url }}">{{ t | upcase }}</a></h5>
             <p>{{count}}</p>
         </div>
     </div>
