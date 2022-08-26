@@ -43,4 +43,11 @@ $theme-colors: map-merge(
   $theme-colors
 );
 
+/* width of home page icons */
+@media (min-width: 992px) {
+  .col-lg-4 {
+  max-width: 25%;
+}
+}
+
 @import "base", "theme-colors", "pages", "custom";
