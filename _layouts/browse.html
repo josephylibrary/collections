@@ -18,10 +18,10 @@ layout: page
     <div class="col-md-2">
         <div class="dropdown">
             <button class="btn btn-secondary mt-1 dropdown-toggle" type="button" id="browseSortButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Collection: <span class="font-weight-bold" id="sortfilter">All</span>
+                Collection: <span class="font-weight-bold" id="sortfilter">All Featured Archive Collections</span>
             </button>
             <div class="dropdown-menu browse-sort-menu" aria-labelledby="browseSortButton">
-                <a class="dropdown-item browse-filter-item active filter" data-filter="allcollections" href="/collections/browse.html#">All Collections</a>
+                <a class="dropdown-item browse-filter-item active filter" data-filter="allcollections" href="/collections/browse.html#">All Featured Achive Collections</a>
                 {%- assign collections = site.data[site.metadata] | map: 'collection' | compact | uniq -%}
                 {% for collection in collections %}<a class="dropdown-item browse-filter-item" data-filter="{{collection | downcase | downcase | remove: ' ' }}" href="/collections/browse.html#{{collection}}">{{collection}}</a>{% endfor %}
              </div>
