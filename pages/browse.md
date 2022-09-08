@@ -4,7 +4,7 @@ layout: browse
 permalink: /browse.html
 # see _data/config-browse.csv for display options
 # the Browse visualization will be added below the content in this file
-collection: all
+collection: Nez Perce Ephemera Box
 ---
 {% capture searchtext %}The search box on this page is very simple. It only searches for strings of text (i.e. words in a row) in the following fields for each item in the collection: 
 
@@ -19,6 +19,7 @@ For more advanced searching capability, use the search box in the navbar above, 
 
 ## Browse All Items
 
+*You are searching under the Nez Perce/Josephy Featured Archives database. To search under the Annotated Alvin Josephy Bibliography database, please [click here](https://library.josephy.org/annotated/browse.html). To search under the SAGE Josephy Library of Western History & Culture collection, which can be checked out, please [click here](https://catalog.sage.eou.edu/eg/opac/results?query=*&qtype=keyword&fg%3Amat_format=&locg=175&detail_record_view=1&_adv=1&sort=).*
 
 
 
