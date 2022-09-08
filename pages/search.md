@@ -7,3 +7,5 @@ permalink: /search/
 ---
 
 ## Full metadata search:
+
+**Please Note: This search application does not allow quotation marks to find exact phrases. If you're looking for an exact phrase, please enter the term into the [Browse Page](../browse.html) search box without quotation marks.**

@@ -66,6 +66,7 @@ $(document).ready(function() {
   $('input#search').on('keyup', lunr_search );
   if (window.location.search) {
     var queryString = decodeURIComponent(window.location.search.substring(1).split("=")[1]);
+    var queryString = queryString.replace(/"/g,'');
     $('input#search').val(queryString);
     lunr_search ();
   }

@@ -4,7 +4,7 @@ layout: browse
 permalink: /browse.html
 # see _data/config-browse.csv for display options
 # the Browse visualization will be added below the content in this file
-collection: Nez Perce Ephemera Box
+collection: all
 ---
 {% capture searchtext %}The search box on this page is very simple. It only searches for strings of text (i.e. words in a row) in the following fields for each item in the collection: 
 
