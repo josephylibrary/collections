@@ -51,3 +51,8 @@ $theme-colors: map-merge(
 }
 
 @import "base", "theme-colors", "pages", "custom";
+
+/* home page fonts */
+h5 {
+  font-size: 1.2rem;
+}
